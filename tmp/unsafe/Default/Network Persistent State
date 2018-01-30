@@ -1,0 +1,1 @@
+{"net":{"http_server_properties":{"servers":[{"https://ssl.gstatic.com":{"supports_spdy":true}},{"https://apis.google.com":{"supports_spdy":true}},{"https://id.google.com":{"supports_spdy":true}},{"https://www.google.com.ua":{"supports_spdy":true}},{"https://www.google.com":{"supports_spdy":true}},{"https://buttons.github.io":{"supports_spdy":true}}],"version":5}}}

@@ -78,11 +78,20 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
+    "8.9.4": "^1.0.5",
     "babel-runtime": "^6.26.0",
     "cache-loader": "^1.0.3",
+    "chai": "^4.0.0",
+    "chromedriver": "^2.35.0",
     "classnames": "^2.2.5",
     "coveralls": "^2.13.1",
+    "cucumber": "^4.0.0",
+    "cucumber-assert": "^1.0.4",
+    "cucumber-html-reporter": "^3.0.4",
     "d3": "4.10.2",
+    "mocha": "^5.0.0",
+    "mocha-simple-html-reporter": "^1.1.0",
+    "multer": "^1.3.0",
     "prop-types": "^15.5.10",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -92,6 +101,7 @@
     "react-router-dom": "^4.2.0",
     "redux": "3.7.2",
     "redux-thunk": "2.2.0",
-    "reselect": "^3.0.1"
+    "reselect": "^3.0.1",
+    "selenium-webdriver": "^3.6.0"
   }
 }

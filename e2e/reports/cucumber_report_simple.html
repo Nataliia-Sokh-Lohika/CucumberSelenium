@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cucumber Feature Report</title>
+    <style type="text/css">
+     body {
+    font: 14px Consolas, Courier, monospace;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.failed {
+    color: darkred;
+    font-weight: bold;
+}
+
+.step-error-message {
+    color: darkred;
+    margin: 0 0 0 10px;
+}
+
+.passed {
+    color: green;
+}
+
+.skipped {
+    color: #999;
+}
+
+.step {
+    margin: 4px 0;
+}
+
+.step .text {
+    border-radius: 3px;
+    display: block;
+}
+
+.step .screenshot {
+    border: solid 1px #CCC;
+    height: 100%;
+    width: 100%;
+}
+
+.step-screenshot-wrap {
+    margin-left: 10px;
+}
+
+.container {
+    background: #f8f8f8;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    margin: 10px;
+}
+
+#danger {
+    background-color: #f66666;
+}
+    </style>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    
+<div class="feature container">
+  <h3 class="title"><span class="highlight">Feature: </span>Budget Page is working due to requirements</h3>
+   <p>  User can add different catigories of incomes and outcomes<br />  All the transactions are displayed in the balance and report</p>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check Budget page title</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> The page title should be &quot;Budgeting App - Educational React App&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check Budget tab is active by default</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> &quot;Budget&quot; tab is active</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check Budget table is displayed</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> I should see Budget table</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check records are present after page refresh</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I add a record with &quot;12345&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">And </span> I check number of records is 9</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">And </span> I refresh the page</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text failed">
+            
+            <span class="keyword highlight">Then </span> I check number of records is 9</span>
+             
+             
+             
+                   <pre class="step-error-message" id="danger">Error: Number of records is not matching! expected to be 9 but actual number is 8
+    at CucumberAssert.callActualEqualAssert (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/cucumber-assert/index.js:43:12)
+    at CucumberAssert.equal (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/cucumber-assert/index.js:90:7)
+    at /Users/nsokh/modus/budgeting-sample-app-webpack2/e2e/feature/step_definitions/budget_context.js:79:14
+    at ManagedPromise.invokeCallback_ (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+    at TaskQueue.execute_ (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+    at /Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/selenium-webdriver/lib/promise.js:668:7
+    at (anonymous)
+    at process._tickCallback (internal/process/next_tick.js:188:7)</pre>
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>: Check Budget table has correct columns</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> &quot;Budget&quot; table should have column Category</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>: Check Budget table has correct columns</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> &quot;Budget&quot; table should have column Description</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>: Check Budget table has correct columns</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> &quot;Budget&quot; table should have column Amount</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check Budget table has preset records</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> &quot;Budget&quot; table should have record Groceries</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check Budget table has preset records</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> &quot;Budget&quot; table should have record Travel</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check Budget table has preset records</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> &quot;Budget&quot; table should have record Income</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check Budget table has preset records</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> &quot;Budget&quot; table should have record Entertainment</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check Budget table has preset records</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> &quot;Budget&quot; table should have record Misc</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check Budget table has preset records</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> &quot;Budget&quot; table should have record Income</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check ability to select a budget category</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">When </span> I click on tab &quot;Budget&quot;</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">And </span> I click on &quot;Catrgory&quot; dropdown</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Then </span> I should see the list of categories</span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">After</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check the list of categories</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check ability to add a description of record</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check ability to ad a value</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check add button is disable when value is not set</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check value is enable when value is set</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Set value then unset it(check add button inactive)</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Set value +123 for consumption</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check record was added with description</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check record was added w\o description</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check only numbers for amount are availiable</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Set value with decimals  - see the alert</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Set 16 digits number</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check the record was added to the table</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>check the record affected the balance records correct</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>Check negative balance should be with “-“</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>check Star button is displayed and clickable</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>check Fork button is displayed and clickable</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+    <div class="element container">
+    <h3 class="title"><span class="highlight">Scenario: </span>check logo is displayed</h3>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+        <div class="step">
+          <p>
+            
+            <span class="text passed">
+            
+            <span class="keyword highlight">Before</span> </span>
+             
+             
+             
+          </p>
+        </div>
+      
+    </div>
+  
+</div>
+ 
+
+    <script>
+        function toggleScreenshot(e){
+    if(this.innerText === "Screenshot -"){
+        this.innerText = "Screenshot +";
+        this.nextElementSibling.style.display = "none";
+    } else {
+        this.innerText = "Screenshot -";
+        this.nextElementSibling.style.display = "block";
+    }
+}
+
+var toggleEls = document.querySelectorAll("a.toggle");
+
+for(var i = 0; i < toggleEls.length; i++){
+    toggleEls[i].addEventListener("click", toggleScreenshot);
+}
+
+    </script>
+  </body>
+</html>

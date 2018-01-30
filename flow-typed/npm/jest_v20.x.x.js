@@ -524,7 +524,7 @@ declare var jest: JestObjectType;
 
 /**
  * The global Jamine object, this is generally not exposed as the public API,
- * using features inside here could break in later versions of Jest.
+ * using feature inside here could break in later versions of Jest.
  */
 declare var jasmine: {
   DEFAULT_TIMEOUT_INTERVAL: number,

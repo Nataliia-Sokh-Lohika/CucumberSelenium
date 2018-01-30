@@ -162,3 +162,23 @@ This project is maintained by [Modus Create](https://moduscreate.com). Fantastic
 
 ## License
 [MIT](License.md)
+
+
+## Simple mocha tests
+
+* `mocha e2e/test` - run all tests in the test folder
+* `mocha e2e/test --reporter mocha-simple-html-reporter --reporter-options output=e2e/reports/simple_mocha_report.html`  - run all tests and save data in html report
+
+## Cucumber tests
+
+* `node_modules/.bin/cucumber-js e2e/feature/` run all the features 
+* `node_modules/.bin/cucumber-js e2e/feature/ -f json:e2e/reports/cucumber_report.json` - run all the features and save a report
+* `node e2e/html-report-builder.js` - run html cucumber report. You can find the generated report here: /e2e/reports
+
+You can find in /e2e/reports all the availiable examples of a report themes
+
+##TODO
+
+* implement World usage
+* implementscreen capturing
+* implement simultaneous runs 

@@ -22,11 +22,11 @@ declare module 'babel-preset-env' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module 'babel-preset-env/data/built-in-features' {
+declare module 'babel-preset-env/data/built-in-feature' {
   declare module.exports: any;
 }
 
-declare module 'babel-preset-env/data/plugin-features' {
+declare module 'babel-preset-env/data/plugin-feature' {
   declare module.exports: any;
 }
 
@@ -59,11 +59,11 @@ declare module 'babel-preset-env/lib/utils' {
 }
 
 // Filename aliases
-declare module 'babel-preset-env/data/built-in-features.js' {
-  declare module.exports: $Exports<'babel-preset-env/data/built-in-features'>;
+declare module 'babel-preset-env/data/built-in-feature.js' {
+  declare module.exports: $Exports<'babel-preset-env/data/built-in-feature'>;
 }
-declare module 'babel-preset-env/data/plugin-features.js' {
-  declare module.exports: $Exports<'babel-preset-env/data/plugin-features'>;
+declare module 'babel-preset-env/data/plugin-feature.js' {
+  declare module.exports: $Exports<'babel-preset-env/data/plugin-feature'>;
 }
 declare module 'babel-preset-env/lib/default-includes.js' {
   declare module.exports: $Exports<'babel-preset-env/lib/default-includes'>;

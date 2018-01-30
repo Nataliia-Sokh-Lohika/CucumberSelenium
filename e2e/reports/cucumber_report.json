@@ -1,0 +1,1642 @@
+[
+  {
+    "description": "  User can add different catigories of incomes and outcomes\n  All the transactions are displayed in the balance and report",
+    "keyword": "Feature",
+    "name": "Budget Page is working due to requirements",
+    "line": 1,
+    "id": "budget-page-is-working-due-to-requirements",
+    "tags": [],
+    "uri": "e2e/feature/BudgetPage.feature",
+    "elements": [
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-budget-page-title",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Check Budget page title",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "The page title should be \"Budgeting App - Educational React App\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2264000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-budget-tab-is-active-by-default",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Check Budget tab is active by default",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "\"Budget\" tab is active",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1593000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-budget-table-is-displayed",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Check Budget table is displayed",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should see Budget table",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1409000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-records-are-present-after-page-refresh",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Check records are present after page refresh",
+        "tags": [
+          {
+            "name": "@fail",
+            "line": 21
+          },
+          {
+            "name": "@budget",
+            "line": 21
+          },
+          {
+            "name": "@test2",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I add a record with \"12345\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I check number of records is 9",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1625000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I refresh the page",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 206000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I check number of records is 9",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:77"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 27000000,
+              "error_message": "Error: Number of records is not matching! expected to be 9 but actual number is 8\n    at CucumberAssert.callActualEqualAssert (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/cucumber-assert/index.js:43:12)\n    at CucumberAssert.equal (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/cucumber-assert/index.js:90:7)\n    at /Users/nsokh/modus/budgeting-sample-app-webpack2/e2e/feature/step_definitions/budget_context.js:79:14\n    at ManagedPromise.invokeCallback_ (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /Users/nsokh/modus/budgeting-sample-app-webpack2/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;:-check-budget-table-has-correct-columns",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": ": Check Budget table has correct columns",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 28
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "\"Budget\" table should have column Category",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;:-check-budget-table-has-correct-columns",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": ": Check Budget table has correct columns",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 28
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "\"Budget\" table should have column Description",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:59"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;:-check-budget-table-has-correct-columns",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": ": Check Budget table has correct columns",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 28
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "\"Budget\" table should have column Amount",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:59"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-budget-table-has-preset-records",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Check Budget table has preset records",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 38
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "\"Budget\" table should have record Groceries",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-budget-table-has-preset-records",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "Check Budget table has preset records",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 38
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "\"Budget\" table should have record Travel",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:62"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-budget-table-has-preset-records",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Check Budget table has preset records",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 38
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "\"Budget\" table should have record Income",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:62"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-budget-table-has-preset-records",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "Check Budget table has preset records",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 38
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "\"Budget\" table should have record Entertainment",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-budget-table-has-preset-records",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "Check Budget table has preset records",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 38
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "\"Budget\" table should have record Misc",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:62"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-budget-table-has-preset-records",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Check Budget table has preset records",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 38
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "\"Budget\" table should have record Income",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-ability-to-select-a-budget-category",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "Check ability to select a budget category",
+        "tags": [
+          {
+            "name": "@budget",
+            "line": 51
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 53,
+            "name": "I click on tab \"Budget\"",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "I click on \"Catrgory\" dropdown",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:65"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 55,
+            "name": "I should see the list of categories",
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:69"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-the-list-of-categories",
+        "keyword": "Scenario",
+        "line": 58,
+        "name": "Check the list of categories",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 57
+          },
+          {
+            "name": "@budget",
+            "line": 57
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-ability-to-add-a-description-of-record",
+        "keyword": "Scenario",
+        "line": 61,
+        "name": "Check ability to add a description of record",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 60
+          },
+          {
+            "name": "@budget",
+            "line": 60
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-ability-to-ad-a-value",
+        "keyword": "Scenario",
+        "line": 64,
+        "name": "Check ability to ad a value",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 63
+          },
+          {
+            "name": "@budget",
+            "line": 63
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-add-button-is-disable-when-value-is-not-set",
+        "keyword": "Scenario",
+        "line": 67,
+        "name": "Check add button is disable when value is not set",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 66
+          },
+          {
+            "name": "@budget",
+            "line": 66
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-value-is-enable-when-value-is-set",
+        "keyword": "Scenario",
+        "line": 70,
+        "name": "Check value is enable when value is set",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 69
+          },
+          {
+            "name": "@budget",
+            "line": 69
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;set-value-then-unset-it(check-add-button-inactive)",
+        "keyword": "Scenario",
+        "line": 73,
+        "name": "Set value then unset it(check add button inactive)",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 72
+          },
+          {
+            "name": "@budget",
+            "line": 72
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;set-value-+123-for-consumption",
+        "keyword": "Scenario",
+        "line": 76,
+        "name": "Set value +123 for consumption",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 75
+          },
+          {
+            "name": "@budget",
+            "line": 75
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-record-was-added-with-description",
+        "keyword": "Scenario",
+        "line": 79,
+        "name": "Check record was added with description",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 78
+          },
+          {
+            "name": "@budget",
+            "line": 78
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-record-was-added-w\\o-description",
+        "keyword": "Scenario",
+        "line": 82,
+        "name": "Check record was added w\\o description",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 81
+          },
+          {
+            "name": "@budget",
+            "line": 81
+          },
+          {
+            "name": "@test2",
+            "line": 81
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-only-numbers-for-amount-are-availiable",
+        "keyword": "Scenario",
+        "line": 85,
+        "name": "Check only numbers for amount are availiable",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 84
+          },
+          {
+            "name": "@budget",
+            "line": 84
+          },
+          {
+            "name": "@test2",
+            "line": 84
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;set-value-with-decimals----see-the-alert",
+        "keyword": "Scenario",
+        "line": 88,
+        "name": "Set value with decimals  - see the alert",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 87
+          },
+          {
+            "name": "@budget",
+            "line": 87
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;set-16-digits-number",
+        "keyword": "Scenario",
+        "line": 91,
+        "name": "Set 16 digits number",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 90
+          },
+          {
+            "name": "@budget",
+            "line": 90
+          },
+          {
+            "name": "@test2",
+            "line": 90
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-the-record-was-added-to-the-table",
+        "keyword": "Scenario",
+        "line": 94,
+        "name": "Check the record was added to the table",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 93
+          },
+          {
+            "name": "@budget",
+            "line": 93
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-the-record-affected-the-balance-records-correct",
+        "keyword": "Scenario",
+        "line": 97,
+        "name": "check the record affected the balance records correct",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 96
+          },
+          {
+            "name": "@budget",
+            "line": 96
+          },
+          {
+            "name": "@test2",
+            "line": 96
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-negative-balance-should-be-with-“-“",
+        "keyword": "Scenario",
+        "line": 100,
+        "name": "Check negative balance should be with “-“",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 99
+          },
+          {
+            "name": "@budget",
+            "line": 99
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-star-button-is-displayed-and-clickable",
+        "keyword": "Scenario",
+        "line": 103,
+        "name": "check Star button is displayed and clickable",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 102
+          },
+          {
+            "name": "@budget",
+            "line": 102
+          },
+          {
+            "name": "@test2",
+            "line": 102
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-fork-button-is-displayed-and-clickable",
+        "keyword": "Scenario",
+        "line": 106,
+        "name": "check Fork button is displayed and clickable",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 105
+          },
+          {
+            "name": "@budget",
+            "line": 105
+          },
+          {
+            "name": "@test2",
+            "line": 105
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "budget-page-is-working-due-to-requirements;check-logo-is-displayed",
+        "keyword": "Scenario",
+        "line": 109,
+        "name": "check logo is displayed",
+        "tags": [
+          {
+            "name": "@todo",
+            "line": 108
+          },
+          {
+            "name": "@budget",
+            "line": 108
+          },
+          {
+            "name": "@test2",
+            "line": 108
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/feature/step_definitions/budget_context.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

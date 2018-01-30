@@ -922,7 +922,7 @@ declare module 'lighthouse/lighthouse-core/report/v2/renderer/report-renderer' {
   declare module.exports: any;
 }
 
-declare module 'lighthouse/lighthouse-core/report/v2/renderer/report-ui-features' {
+declare module 'lighthouse/lighthouse-core/report/v2/renderer/report-ui-feature' {
   declare module.exports: any;
 }
 
@@ -1618,8 +1618,8 @@ declare module 'lighthouse/lighthouse-core/report/v2/renderer/logger.js' {
 declare module 'lighthouse/lighthouse-core/report/v2/renderer/report-renderer.js' {
   declare module.exports: $Exports<'lighthouse/lighthouse-core/report/v2/renderer/report-renderer'>;
 }
-declare module 'lighthouse/lighthouse-core/report/v2/renderer/report-ui-features.js' {
-  declare module.exports: $Exports<'lighthouse/lighthouse-core/report/v2/renderer/report-ui-features'>;
+declare module 'lighthouse/lighthouse-core/report/v2/renderer/report-ui-feature.js' {
+  declare module.exports: $Exports<'lighthouse/lighthouse-core/report/v2/renderer/report-ui-feature'>;
 }
 declare module 'lighthouse/lighthouse-core/report/v2/renderer/util.js' {
   declare module.exports: $Exports<'lighthouse/lighthouse-core/report/v2/renderer/util'>;

@@ -326,27 +326,27 @@ declare module 'firebase-tools/lib/identifierToProjectId' {
   declare module.exports: any;
 }
 
-declare module 'firebase-tools/lib/init/features/database' {
+declare module 'firebase-tools/lib/init/feature/database' {
   declare module.exports: any;
 }
 
-declare module 'firebase-tools/lib/init/features/functions' {
+declare module 'firebase-tools/lib/init/feature/functions' {
   declare module.exports: any;
 }
 
-declare module 'firebase-tools/lib/init/features/hosting' {
+declare module 'firebase-tools/lib/init/feature/hosting' {
   declare module.exports: any;
 }
 
-declare module 'firebase-tools/lib/init/features/index' {
+declare module 'firebase-tools/lib/init/feature/index' {
   declare module.exports: any;
 }
 
-declare module 'firebase-tools/lib/init/features/project' {
+declare module 'firebase-tools/lib/init/feature/project' {
   declare module.exports: any;
 }
 
-declare module 'firebase-tools/lib/init/features/storage' {
+declare module 'firebase-tools/lib/init/feature/storage' {
   declare module.exports: any;
 }
 
@@ -709,23 +709,23 @@ declare module 'firebase-tools/lib/hosting/initMiddleware.js' {
 declare module 'firebase-tools/lib/identifierToProjectId.js' {
   declare module.exports: $Exports<'firebase-tools/lib/identifierToProjectId'>;
 }
-declare module 'firebase-tools/lib/init/features/database.js' {
-  declare module.exports: $Exports<'firebase-tools/lib/init/features/database'>;
+declare module 'firebase-tools/lib/init/feature/database.js' {
+  declare module.exports: $Exports<'firebase-tools/lib/init/feature/database'>;
 }
-declare module 'firebase-tools/lib/init/features/functions.js' {
-  declare module.exports: $Exports<'firebase-tools/lib/init/features/functions'>;
+declare module 'firebase-tools/lib/init/feature/functions.js' {
+  declare module.exports: $Exports<'firebase-tools/lib/init/feature/functions'>;
 }
-declare module 'firebase-tools/lib/init/features/hosting.js' {
-  declare module.exports: $Exports<'firebase-tools/lib/init/features/hosting'>;
+declare module 'firebase-tools/lib/init/feature/hosting.js' {
+  declare module.exports: $Exports<'firebase-tools/lib/init/feature/hosting'>;
 }
-declare module 'firebase-tools/lib/init/features/index.js' {
-  declare module.exports: $Exports<'firebase-tools/lib/init/features/index'>;
+declare module 'firebase-tools/lib/init/feature/index.js' {
+  declare module.exports: $Exports<'firebase-tools/lib/init/feature/index'>;
 }
-declare module 'firebase-tools/lib/init/features/project.js' {
-  declare module.exports: $Exports<'firebase-tools/lib/init/features/project'>;
+declare module 'firebase-tools/lib/init/feature/project.js' {
+  declare module.exports: $Exports<'firebase-tools/lib/init/feature/project'>;
 }
-declare module 'firebase-tools/lib/init/features/storage.js' {
-  declare module.exports: $Exports<'firebase-tools/lib/init/features/storage'>;
+declare module 'firebase-tools/lib/init/feature/storage.js' {
+  declare module.exports: $Exports<'firebase-tools/lib/init/feature/storage'>;
 }
 declare module 'firebase-tools/lib/init/index.js' {
   declare module.exports: $Exports<'firebase-tools/lib/init/index'>;
